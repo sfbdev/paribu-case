@@ -1,0 +1,43 @@
+.p-tab-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .nav-item {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid $dark2;
+
+      .nav-link {
+        color: $dark2;
+        padding: 12px 0px;
+        display: block;
+
+        &.login {
+          color: $primary;
+        }
+        &.register {
+          color: $secondary;
+        }
+      }
+    }
+  }
+  .tab-content {
+    color: $text;
+    display: block;
+    .tab-pane {
+      position: relative;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 12px;
+      height: fit-content;
+      position: relative;
+    }
+  }
+}

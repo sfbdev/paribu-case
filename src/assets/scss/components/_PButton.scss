@@ -1,0 +1,15 @@
+.p-button{
+  height: 46px;
+  width: 100%;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $text;
+  font-weight: 500;
+  background-color: $primary;
+  border: 0;
+  &.secondary{
+    background-color: $secondary;
+  }
+}

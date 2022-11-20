@@ -1,5 +1,5 @@
 <template>
-  <div class="p-input-wrapper">input</div>
+  <input type="text" class="p-input" />
 </template>
 
 <script>

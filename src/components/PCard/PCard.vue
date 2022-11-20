@@ -1,10 +1,10 @@
 <template>
-  <div class="p-card-wrapper">p-card</div>
+  <div class="p-card"><slot></slot></div>
 </template>
 
 <script>
 export default {
-  name: "PCard",
+  name: "p-card",
 };
 </script>
 
