@@ -5,4 +5,16 @@ import store from "./store";
 
 import "@/assets/scss/main.scss";
 
-createApp(App).use(store).use(router).mount("#app");
+import PButton from "@/components/PButton/PButton.vue";
+import PCard from "@/components/PCard/PCard.vue";
+import PInput from "@/components/PInput/PInput.vue";
+import PTab from "@/components/PTab/PTab.vue";
+
+createApp(App)
+  .component("app-p-button", PButton)
+  .component("app-p-card", PCard)
+  .component("app-p-input", PInput)
+  .component("app-p-tab", PTab)
+  .use(store)
+  .use(router)
+  .mount("#app");
