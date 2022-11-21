@@ -1,11 +1,11 @@
 <template>
-  <div class="p-tab-wrapper">
-    <ul>
+  <div class="p-tab">
+    <ul class="p-tab__list">
       <li class="nav-item" v-for="tab in tabs" :key="tab.id">
         <a
           @click="currentTab(tab.id)"
           class="nav-link"
-          :class="[tab.id == activeTab ? `active ${tab.id}` : '']"
+          :class="[tab.id == activeTab ? `active nav-link--${tab.id}` : '']"
           :href="`#${tab.id}`"
         >
           {{ $t(tab.title) }}</a
@@ -15,7 +15,7 @@
     <div class="tab-content">
       <div class="tab-pane">
         <div
-          class="login form"
+          class="form"
           v-if="activeTab === 'login'"
           :class="activeTab === 'login' ? 'active' : ''"
         >
@@ -32,7 +32,7 @@
           <app-p-button @click="submitLogin()" label="Giriş Yap"></app-p-button>
         </div>
 
-        <div class="register form" v-if="activeTab === 'register'">
+        <div class="form" v-if="activeTab === 'register'">
           <app-p-input
             v-model="registerModel.fullName"
             type="text"
@@ -49,8 +49,8 @@
             :placeholder="$t('Parolanız')"
           ></app-p-input>
           <app-p-button
+            :secondary="true"
             @click="submitRegister()"
-            class="secondary"
             label="Giriş Yap"
           ></app-p-button>
         </div>

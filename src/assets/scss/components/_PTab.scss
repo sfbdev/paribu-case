@@ -1,8 +1,8 @@
-.p-tab-wrapper {
+.p-tab {
   display: flex;
   flex-direction: column;
   width: 100%;
-  ul {
+  &__list {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -17,10 +17,10 @@
         padding: 12px 0px;
         display: block;
 
-        &.login {
+        &--login {
           color: $primary;
         }
-        &.register {
+        &--register {
           color: $secondary;
         }
       }

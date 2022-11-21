@@ -7,9 +7,11 @@
   justify-content: center;
   color: $text;
   font-weight: 500;
-  background-color: $primary;
   border: 0;
-  &.secondary{
+  &--primary{
+    background-color: $primary;
+  }
+  &--secondary{
     background-color: $secondary;
   }
 }

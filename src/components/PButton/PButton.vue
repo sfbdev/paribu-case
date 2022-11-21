@@ -1,11 +1,12 @@
 <template>
-  <button class="p-button" type="button" @click="onClick" :style="style">
+  <button :class="classes" type="button" @click="onClick">
     {{ label }}
   </button>
 </template>
 
 <script>
 import { reactive, computed } from "vue";
+import "../../assets/scss/main.scss";
 
 export default {
   name: "p-button",
@@ -15,12 +16,9 @@ export default {
       type: String,
       required: true,
     },
-    primary: {
+    secondary: {
       type: Boolean,
       default: true,
-    },
-    backgroundColor: {
-      type: String,
     },
   },
 
@@ -30,13 +28,11 @@ export default {
     props = reactive(props);
     return {
       classes: computed(() => ({
-        "storybook-button": true,
-        "storybook-button--primary": !props.seceondary,
-        "storybook-button--secondary": props.secondary,
+        "p-button": true,
+        "p-button--primary": !props.seceondary,
+        "p-button--secondary": props.secondary,
       })),
-      style: computed(() => ({
-        backgroundColor: props.backgroundColor,
-      })),
+
       onClick() {
         emit("click");
       },
