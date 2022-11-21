@@ -26,7 +26,7 @@
           ></app-p-input>
           <app-p-input
             v-model="loginModel.password"
-            type="email"
+            type="password"
             :placeholder="$t('Parolanız')"
           ></app-p-input>
           <app-p-button @click="submitLogin()" label="Giriş Yap"></app-p-button>
