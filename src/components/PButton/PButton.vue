@@ -18,7 +18,7 @@ export default {
     },
     secondary: {
       type: Boolean,
-      default: true,
+      default: false,
     },
   },
 
