@@ -13,9 +13,11 @@
       border-bottom: 1px solid $dark2;
 
       &__link {
-        color: $dark2;
-        padding: 12px 0px;
         display: block;
+        padding: 12px 0px;
+        width: 100%;
+        color: $dark2;
+        text-align: center;
 
         &--login {
           color: $primary;
