@@ -6,13 +6,13 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    .nav-item {
+    &__item {
       width: 50%;
       display: flex;
       justify-content: center;
       border-bottom: 1px solid $dark2;
 
-      .nav-link {
+      &__link {
         color: $dark2;
         padding: 12px 0px;
         display: block;
@@ -29,7 +29,7 @@
   .tab-content {
     color: $text;
     display: block;
-    .tab-pane {
+    .tab-content__pane {
       position: relative;
     }
     .form {

@@ -1,3 +1,8 @@
 {
-  "message": "test"
+  "E-Posta Adresiniz": "Your E-mail",
+  "Parolanız": "Your Password",
+  "Adınız Soyadınız": "Full Name",
+  "Giriş Yap": "Login",
+  "Üye Ol": "Register",
+  "Hoşgeldiniz": "Welcome"
 }
