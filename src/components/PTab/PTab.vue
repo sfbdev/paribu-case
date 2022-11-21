@@ -19,40 +19,40 @@
           v-if="activeTab === 'login'"
           :class="activeTab === 'login' ? 'active' : ''"
         >
-          <app-p-input
+          <p-input
             v-model="loginModel.email"
             type="email"
             :placeholder="$t('E-Post Adresiniz')"
-          ></app-p-input>
-          <app-p-input
+          ></p-input>
+          <p-input
             v-model="loginModel.password"
             type="password"
             :placeholder="$t('Parolanız')"
-          ></app-p-input>
-          <app-p-button @click="submitLogin()" label="Giriş Yap"></app-p-button>
+          ></p-input>
+          <p-button @click="submitLogin()" label="Giriş Yap"></p-button>
         </div>
 
         <div class="form" v-if="activeTab === 'register'">
-          <app-p-input
+          <p-input
             v-model="registerModel.fullName"
             type="text"
             :placeholder="$t('Adınız Soyadınız')"
-          ></app-p-input>
-          <app-p-input
+          ></p-input>
+          <p-input
             v-model="registerModel.email"
             type="email"
             :placeholder="$t('E-Post Adresiniz')"
-          ></app-p-input>
-          <app-p-input
+          ></p-input>
+          <p-input
             v-model="registerModel.password"
             type="password"
             :placeholder="$t('Parolanız')"
-          ></app-p-input>
-          <app-p-button
+          ></p-input>
+          <p-button
             :secondary="true"
             @click="submitRegister()"
             label="Giriş Yap"
-          ></app-p-button>
+          ></p-button>
         </div>
       </div>
     </div>

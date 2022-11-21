@@ -9,7 +9,6 @@
 
 <script>
 import { computed } from "vue";
-import "../../assets/scss/main.scss";
 
 export default {
   name: "p-input",

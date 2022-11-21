@@ -17,10 +17,10 @@ import PTab from "@/components/PTab/PTab.vue";
 axios.defaults.baseURL = "https://637aa9d2702b9830b9f19d31.mockapi.io";
 
 createApp(App)
-  .component("app-p-button", PButton)
-  .component("app-p-card", PCard)
-  .component("app-p-input", PInput)
-  .component("app-p-tab", PTab)
+  .component("p-button", PButton)
+  .component("p-card", PCard)
+  .component("p-input", PInput)
+  .component("p-tab", PTab)
   .use(VueAxios, axios)
   .use(i18n)
   .use(store)

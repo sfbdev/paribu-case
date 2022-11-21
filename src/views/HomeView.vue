@@ -1,8 +1,8 @@
 <template>
   <div class="page home">
-    <app-p-card>
-      <slot> <app-p-tab :tabs="tabs"></app-p-tab> </slot>
-    </app-p-card>
+    <p-card>
+      <slot> <p-tab :tabs="tabs"></p-tab> </slot>
+    </p-card>
   </div>
 </template>
 
