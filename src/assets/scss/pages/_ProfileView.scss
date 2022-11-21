@@ -1,0 +1,12 @@
+.page.profile{
+  background-color: $dark;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1{
+    color: $text;
+    font-size: 32px;
+  }
+}

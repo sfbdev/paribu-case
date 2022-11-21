@@ -1,10 +1,21 @@
 <template>
-  <input type="text" class="p-input" />
+  <input class="p-input" :value="modelValue" @input="updateValue" />
 </template>
 
 <script>
 export default {
-  name: "PInput",
+  props: {
+    // eslint-disable-next-line vue/require-prop-type-constructor
+    modelValue: "",
+  },
+
+  setup(props, context) {
+    const updateValue = (event) => {
+      context.emit("update:modelValue", event.target.value);
+    };
+
+    return { updateValue };
+  },
 };
 </script>
 
